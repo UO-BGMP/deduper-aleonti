@@ -1,4 +1,5 @@
 # Deduper
 
-### Part 1
-Write up a strategy for writing a Reference based PCR duplicate removal tool. Be sure to include an example input and output SAM file.
+## Jan 4, 2017
+- Updated Deduper script with current progress (created argparse variables, began drafting functions)
+- Added list of 96 expected UMIs provided by Leslie
