@@ -11,3 +11,4 @@
 ## Jan 15, 2017
 - Fixed a small bug with the "-p" flag error message
 - Reuploaded Deduper script. It's complete and ready to turn in!
+NOTE: I'm not able to create another pull request, since my last one is still open (from turning in Part 1).
