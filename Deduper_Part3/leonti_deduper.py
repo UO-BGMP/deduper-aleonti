@@ -33,16 +33,14 @@ if args.umifile:
 	print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n NOTE: Because an UMI file was provided, UMIs must exactly match a known sequence or the read will be tossed... \n")
 else:
 	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n NOTE: UMI file not provided... UMIs will be assumed to be randomers... \n")
-	
-if args.paired is not None:
-	print(" NOTE: Input SAM file is paired-end... \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
-else:
-	print(" NOTE: '-p' flag not used... Input file is assumed to be single-read only... \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
 # This script currently can't handle PE data, so if the '-p' flag is set the program will exit
-if pe_flag == True:
-	raise parser.error("\n Currently no paired-end functionality available, exiting...")
 
+if pe_flag == True:
+	print(" NOTE: Input SAM file is paired-end... \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+	raise parser.error("\n\n !!! Currently no paired-end functionality available, exiting... !!!\n")
+else:
+	print(" NOTE: '-p' flag not used, Input file is assumed to be single-read... \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
 ################### Setting up dictionaries/lists/tuples, defining functions ########################################
 
