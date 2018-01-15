@@ -7,3 +7,7 @@
 ## Jan 14, 2017
 - Uploaded final Deduper script
 - Reorganized file structure, created new folder for Parts 1 & 2
+
+## Jan 15, 2017
+- Fixed a small bug with the "-p" flag error message
+- Reuploaded Deduper script. It's complete and ready to turn in!
